@@ -2,6 +2,13 @@
 
 nb_progressive_img=0
 nb_not_progressive_img=0
+
+for image in $(ls static/**/*.png)
+do
+    nb_not_progressive_img=$((nb_not_progressive_img+1))
+    echo "\e[0;31m[NOT JPEG]\e[m\t - \e[0;31m$image\e[m"
+done
+
 for image in $(ls static/**/*.(jpeg|jpg))
 do
     if [[  -z $(file $image | grep progressive) ]]
