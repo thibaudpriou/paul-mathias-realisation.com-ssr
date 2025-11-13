@@ -1,11 +1,15 @@
 import type ICategory from "../types/category";
 import type Sample from "../types/sample";
-import {realisations} from "./realisations";
+import {realisations, type RealisationId} from "./realisations";
 
 // sorted list of realisations IDs to display for each pages
-const realisationsOrder: string[] = [
-    "id-guevn-voler",
+const realisationsOrder: RealisationId[] = [
     "id-ivory",
+    "id-nolte",
+    "id-guevn-voler",
+    "id-spa",
+    "id-clipp",
+    "id-algo",
     "id-rebecca-pills",
     "id-garreau-armagnac",
     "id-guevn-drogue-douce",
@@ -26,15 +30,18 @@ const realisationsOrder: string[] = [
     // "id-esje",
 ];
 
-const commercialsRealisationsOrder: string[] = [
+const commercialsRealisationsOrder: RealisationId[] = [
     "id-ivory",
+    "id-nolte",
+    "id-clipp",
     "id-garreau-armagnac",
+    "id-spa",
     "id-skydrone",
     "id-berry-province",
     // "id-steampunk",
 ];
 
-const musicVideoRealisationsOrder: string[] = [
+const musicVideoRealisationsOrder: RealisationId[] = [
     "id-guevn-voler",
     "id-rebecca-pills",
     "id-guevn-drogue-douce",
@@ -47,7 +54,8 @@ const musicVideoRealisationsOrder: string[] = [
     // "id-esje",
 ];
 
-const filmsRealisationsOrder: string[] = [
+const filmsRealisationsOrder: RealisationId[] = [
+    "id-algo",
     //"id-elbde",
     "id-horloger",
     // "id-ctlm",
@@ -55,7 +63,7 @@ const filmsRealisationsOrder: string[] = [
     // "id-rage",
 ];
 
-function getRealisations(ids: string[]): ICategory["realisations"] {
+function getRealisations(ids: RealisationId[]): ICategory["realisations"] {
     return ids.map(id => realisations[id]);
 }
 

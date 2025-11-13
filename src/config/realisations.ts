@@ -2,7 +2,7 @@ import {ImageRatio, RealisationType} from "../types/realisation";
 
 import type ICategory from "../types/category";
 
-export const realisations: Record<string, ICategory["realisations"][0]> = {
+export const realisations = {
     "id-alejandro-donde-estas": {
         imageRatio: ImageRatio["2.5/1"],
         samples: [
@@ -1083,4 +1083,170 @@ export const realisations: Record<string, ICategory["realisations"][0]> = {
         type: RealisationType.Clip,
         videoUrl: "https://www.youtube.com/watch?v=6XuLEIjBreA",
     },
-};
+    "id-algo": {
+        imageRatio: ImageRatio["2.5/1"],
+        samples: [
+            {
+                alt: "Échantillon du court métrage L'Algorithme de l'Orgasme 1",
+                defaultImagePath: "imgs/realisations/algo/1.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/algo/1.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                alt: "Échantillon du court métrage L'Algorithme de l'Orgasme 2",
+                defaultImagePath: "imgs/realisations/algo/2.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/algo/2.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 2,
+            },
+            {
+                alt: "Échantillon du court métrage L'Algorithme de l'Orgasme 3",
+                defaultImagePath: "imgs/realisations/algo/3.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/algo/3.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 3,
+            },
+        ],
+        title: "L'Algorithme de l'Orgasme",
+        type: RealisationType.Short,
+        videoUrl: "https://vimeo.com/1135799166?share=copy&fl=sv&fe=ci",
+    },
+    "id-clipp": {
+        imageRatio: ImageRatio["2.5/1"],
+        samples: [
+            {
+                alt: "Échantillon publicité Clipp 1",
+                defaultImagePath: "imgs/realisations/clipp/1.png",
+                images: [
+                    {
+                        path: "imgs/realisations/clipp/1.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                alt: "Échantillon publicité Clipp 2",
+                defaultImagePath: "imgs/realisations/clipp/2.png",
+                images: [
+                    {
+                        path: "imgs/realisations/clipp/2.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 2,
+            },
+            {
+                alt: "Échantillon publicité Clipp 3",
+                defaultImagePath: "imgs/realisations/clipp/3.png",
+                images: [
+                    {
+                        path: "imgs/realisations/clipp/3.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 3,
+            },
+        ],
+        title: "Clipp",
+        type: RealisationType.Ad,
+        videoUrl: "https://vimeo.com/1093720839?share=copy&fl=sv&fe=ci",
+    },
+    "id-nolte": {
+        imageRatio: ImageRatio["2.5/1"],
+        samples: [
+            {
+                alt: "Échantillon publicité Nolte Küchen 1",
+                defaultImagePath: "imgs/realisations/nolte/1.png",
+                images: [
+                    {
+                        path: "imgs/realisations/nolte/1.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                alt: "Échantillon publicité Nolte Küchen 2",
+                defaultImagePath: "imgs/realisations/nolte/2.png",
+                images: [
+                    {
+                        path: "imgs/realisations/nolte/2.png",
+                        type: "image/png",
+                    },
+                ],
+                rank: 2,
+            },
+            {
+                alt: "Échantillon publicité Nolte Küchen 3",
+                defaultImagePath: "imgs/realisations/nolte/3.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/nolte/3.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 3,
+            },
+        ],
+        title: "Nolte Küchen",
+        type: RealisationType.Ad,
+        videoUrl: undefined, // not yet available
+    },
+    "id-spa": {
+        imageRatio: ImageRatio["2.5/1"],
+        samples: [
+            {
+                alt: "Échantillon publicité La SPA 1",
+                defaultImagePath: "imgs/realisations/spa/1.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/spa/1.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 1,
+            },
+            {
+                alt: "Échantillon publicité La SPA 2",
+                defaultImagePath: "imgs/realisations/spa/2.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/spa/2.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 2,
+            },
+            {
+                alt: "Échantillon publicité La SPA 3",
+                defaultImagePath: "imgs/realisations/spa/3.jpg",
+                images: [
+                    {
+                        path: "imgs/realisations/spa/3.jpg",
+                        type: "image/jpeg",
+                    },
+                ],
+                rank: 3,
+            },
+        ],
+        title: "La SPA",
+        type: RealisationType.Ad,
+        videoUrl: "https://vimeo.com/1135688893?share=copy&fl=sv&fe=ci",
+    },
+} as const satisfies Record<string, ICategory["realisations"][0]>;
+
+export type RealisationId = keyof typeof realisations;
