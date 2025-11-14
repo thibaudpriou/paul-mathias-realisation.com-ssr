@@ -110,14 +110,8 @@
     }
 
     .subtitle {
-        display: none;
+        display: block;
         font-size: 1.5em;
-    }
-
-    @media (min-width: 400px) {
-        .subtitle {
-            display: block;
-        }
     }
 
     .seeVideoLink {
