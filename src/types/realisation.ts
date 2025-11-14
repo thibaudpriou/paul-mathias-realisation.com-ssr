@@ -3,7 +3,7 @@ import type Sample from "./sample";
 export enum RealisationType {
     Ad = "Pub",
     Short = "Court-métrage",
-    Trailer = "Trailer",
+    Trailer = "Bande Annonce",
     Clip = "Clip",
 }
 
