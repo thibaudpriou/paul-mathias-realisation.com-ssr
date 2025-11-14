@@ -1121,7 +1121,7 @@ export const realisations = {
             },
         ],
         title: "L'Algorithme de l'Orgasme",
-        type: RealisationType.Short,
+        type: RealisationType.Trailer,
         videoUrl: "https://vimeo.com/1135799166?share=copy&fl=sv&fe=ci",
     },
     "id-clipp": {
