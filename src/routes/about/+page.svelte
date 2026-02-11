@@ -25,17 +25,18 @@
 
             <div class="about-text-container">
                 <p class="about-text">
-                    <strong>Paul Gojecki</strong> et <strong>Mathias Priou</strong> sont des auteurs et réalisateurs
-                    basés à <strong>Paris</strong> et <strong>Luxembourg</strong>.
+                    <strong>Paul Gojecki</strong> et <strong>Mathias Priou</strong> forment un duo d'auteurs et
+                    réalisateurs basé à <strong>Paris</strong> et <strong>Luxembourg</strong>.
                 </p>
                 <p class="about-text">
-                    Leur style de narration est nourri par des références cinématographiques communes et vient insuffler
-                    une dimension et une âme saisissante aux différents médiums auxquels ils se confrontent.
+                    Complets dans leur approche, ils ont un sens aigu de la précision, du cadre et du rythme. Entre
+                    publicité, clip et fiction, ils développent un style cinématographique nourri de fortes références
+                    visuelles et narratives.
                 </p>
                 <p class="about-text">
-                    Avec près de 200 réalisations dans la publicité, le clip et la fiction, leur goût pour la technique
-                    et l'expérimentation les amène à repousser les limites de leur art au service d'un seul but&nbsp;:
-                    <strong>l'émotion</strong>.
+                    Ils accordent une attention particulière au sound design et à la dimension sensorielle de leurs
+                    films. Ils utilisent leurs affinités pour les nouvelles technologies comme des outils au service du
+                    récit, toujours guidés par la précision et <strong>l'émotion</strong>.
                 </p>
             </div>
 
@@ -127,6 +128,10 @@
         -ms-animation-fill-mode: both;
         -o-animation-fill-mode: both;
         animation-fill-mode: both;
+    }
+
+    .about-text:last-child {
+        margin-bottom: 0;
     }
 
     .about-text strong {
