@@ -1204,7 +1204,7 @@ export const realisations = {
         ],
         title: "Nolte Küchen",
         type: RealisationType.Ad,
-        videoUrl: undefined, // not yet available
+        videoUrl: "https://vimeo.com/1135393097?share=copy&fl=sv&fe=ci",
     },
     "id-spa": {
         imageRatio: ImageRatio["2.5/1"],
